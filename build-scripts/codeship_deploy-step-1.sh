@@ -6,7 +6,7 @@
 ## the script into the Codeship page.
 
 ## Variables
-REPO_OWNER=venturepath
+PACKAGE_OWNER=venturepath
 PACKAGE_NAME=aga-fe
 QA_TAG=$(build-scripts/process_tag.sh)
 
@@ -23,4 +23,4 @@ mkdir artifact
 ## Move the artifact to the artifact directory, this is
 ## required due to the way the Codeship S3 deployment
 ## mechanism works.
-mv "src/github.com/${REPO_OWNER}/${PACKAGE_NAME}/static" "artifact"
+mv "src/github.com/${PACKAGE_OWNER}/${PACKAGE_NAME}/static" "artifact"
